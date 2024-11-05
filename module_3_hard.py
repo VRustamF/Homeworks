@@ -1,5 +1,5 @@
 def calculate_structure_sum(data_structure):
-    global count
+    count = 0
 
     if isinstance(data_structure, str):
         count += len(data_structure)
@@ -27,8 +27,6 @@ def calculate_structure_sum(data_structure):
 
     return count
 
-
-count = 0
 
 data_structure = [
 [1, 2, 3],
