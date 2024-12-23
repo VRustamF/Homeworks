@@ -11,7 +11,7 @@ class Figure:
         else: self.__sides = [1] * self.sides_count
 
     def get_color(self):
-        return self.__color
+        return list(self.__color)
 
     def __is_valid_color(self, r, g, b):
         return all(isinstance(color, int) and 0 <= color <= 255 for color in (r, g, b))
